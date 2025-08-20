@@ -48,7 +48,7 @@
                 </li>
                 <li class="nav-item d-flex align-items-center gap-2 ms-lg-3">
                     <a href="#"><i class="bi bi-camera fs-5"></i></a>
-                    <a href="#"><i class="bi bi-cart fs-5"></i></a>
+                    <a href="cart"><i class="bi bi-cart fs-5"></i></a>
                     <a href="#"><i class="bi bi-bell fs-5"></i></a>
                 </li>
             </ul>
@@ -81,6 +81,8 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
+
+
 
 <!-- FILTER HORIZONTAL SCROLL -->
 <h5 class="fw-bold mb-2">Filters ></h5>

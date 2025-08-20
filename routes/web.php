@@ -75,3 +75,7 @@ Route::get('/bayar', function () {
 Route::get('/struk', function () {
     return view('produk.struk');
 })->name('struk');
+
+Route::get('/instruksi', function () {
+    return view('produk.instruksi');
+})->name('instruksi');
