@@ -34,9 +34,17 @@
                 <a href="{{ route('instruksi') }}" class="btn btn-dark shadow rounded-pill px-4 fw-bold">
                     BUY NOW
                 </a>
-                <button class="btn btn-outline-primary rounded-pill">
-                    <i class="bi bi-cart"></i> ADD TO
-                </button>
+                <!-- Form untuk ADD TO -->
+    <form action="{{ route('cart.add') }}" method="POST">
+        @csrf
+        <input type="hidden" name="nama" value="Cardigan Knitwear">
+        <input type="hidden" name="harga" value="350000">
+        <input type="hidden" name="gambar" value="images/cardigan.jpg">
+        <button type="submit" class="btn btn-outline-primary rounded-pill">
+            <i class="bi bi-cart"></i> ADD TO
+        </button>
+    </form>
+</div>
             </div>
         </div>
     </div>

@@ -2,6 +2,7 @@
 
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 Route::view('/about', 'pages.about')->name('about');
 Route::view('/panduan', 'pages.panduan')->name('panduan');
@@ -79,3 +80,24 @@ Route::get('/struk', function () {
 Route::get('/instruksi', function () {
     return view('produk.instruksi');
 })->name('instruksi');
+
+
+
+Route::get('/cart', function () {
+    $cart = session()->get('cart', []);
+    return view('pages.cart', compact('cart'));
+})->name('cart');
+
+Route::post('/keranjang/add', function (Request $request) {
+    $cart = session()->get('cart', []);
+
+    $cart[] = [
+        'nama' => $request->nama,
+        'harga' => $request->harga,
+        'gambar' => $request->gambar,
+    ];
+
+    session()->put('cart', $cart);
+
+    return redirect()->route('cart');
+})->name('cart.add');
