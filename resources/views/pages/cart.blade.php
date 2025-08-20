@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container my-4">
-    <h3 class="fw-bold mb-3">🛒 Keranjang Belanja</h3>
+    <h3 class="fw-bold mb-3">🛒 Keranjang Belanja kamu</h3>
 
     @if(count($cart) > 0)
         <div class="list-group mb-4">
