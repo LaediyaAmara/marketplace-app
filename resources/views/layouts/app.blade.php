@@ -267,7 +267,7 @@ body {
         aspect-ratio: 1 / 1;
         border-radius: 8px;
         overflow: hidden;
-        background-color:rgb(147, 151, 182);
+        background-color:rgb(228, 230, 241);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -291,7 +291,7 @@ body {
 
 .product-price {
         font-weight: bold;
-        background-color:rgb(24, 23, 23);
+        background-color:rgb(237, 227, 227);
         padding: 6px;
         font-size: 14px;
         border-radius: 6px;
