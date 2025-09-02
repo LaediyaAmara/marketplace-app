@@ -10,6 +10,14 @@
 
 <style>
 
+/* === GLOBAL BACKGROUND === */
+body {
+    background-color:rgb(233, 230, 230); /* abu-abu muda, bisa diganti #e0e0e0 atau lebih gelap */
+    margin: 0;
+    padding: 0;
+}
+
+
 .navbar {
     margin-bottom: 1rem; /* jarak 16px, bisa disesuaikan */
 }
@@ -27,7 +35,7 @@
     }
     .nav-link:hover,
     .nav-link.active {
-        color: #0d6efd !important;
+        color:rgb(191, 197, 206) !important;
     }
 
     /* Search */
@@ -37,7 +45,7 @@
     }
     .form-control:focus {
         box-shadow: none;
-        border-color: #0d6efd;
+        border-color:rgb(160, 183, 216);
     }
 
     /* Ikon */
@@ -46,7 +54,7 @@
         transition: color 0.2s ease-in-out;
     }
     .bi:hover {
-        color: #0d6efd;
+        color:rgb(230, 235, 243);
     }
 
 
@@ -122,7 +130,7 @@
 /* === KERANJANG STYLING === */
 .keranjang-container {
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color:rgb(148, 159, 179);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -239,7 +247,7 @@
         object-fit: cover;
         border-radius: 12px;
     }
-
+/* Produk Scroll */
 .product-card {
         background-color: white;
         border: 1px solid #ddd;
@@ -259,7 +267,7 @@
         aspect-ratio: 1 / 1;
         border-radius: 8px;
         overflow: hidden;
-        background-color: #f5f5f5;
+        background-color:rgb(147, 151, 182);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -283,7 +291,7 @@
 
 .product-price {
         font-weight: bold;
-        background-color: #f1f1f1;
+        background-color:rgb(24, 23, 23);
         padding: 6px;
         font-size: 14px;
         border-radius: 6px;
@@ -310,7 +318,7 @@
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 10px;
-    background-color: #f8f8f8;
+    background-color:rgb(13, 9, 9);
 }
 
 .product-image {
@@ -348,66 +356,8 @@
     
 
 </style>
-
-
-    <style>
-        body {
-            background-color: #f0f8ff;
-        }
-
-        .navbar {
-            background-color: #87cefa;
-        }
-
-        .footer {
-            background-color: #87cefa;
-            padding: 1rem;
-            text-align: center;
-            color: white;
-            margin-top: 2rem;
-        }
-
-        .product-image-wrapper {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            overflow: hidden;
-            border-radius: 10px;
-            background-color: #f8f8f8;
-        }
-
-        .product-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .product-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: white;
-            box-shadow: 0 0 4px rgba(0,0,0,0.05);
-        }
-
-        .product-title {
-            font-size: 16px;
-            font-weight: 600;
-        }
-
-        .product-price {
-            font-weight: bold;
-            font-size: 16px;
-            color: #000;
-            background-color: #eee;
-            padding: 4px;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
-
-
-
 <div class="container my-4">
     @yield('content')
 </div>
