@@ -12,7 +12,7 @@
 
 /* === GLOBAL BACKGROUND === */
 body {
-    background-color:rgb(233, 230, 230); /* abu-abu muda, bisa diganti #e0e0e0 atau lebih gelap */
+    background-color:rgb(213, 207, 207); /* abu-abu muda, bisa diganti #e0e0e0 atau lebih gelap */
     margin: 0;
     padding: 0;
 }
@@ -291,7 +291,7 @@ body {
 
 .product-price {
         font-weight: bold;
-        background-color:rgb(237, 227, 227);
+        background-color:rgb(10, 9, 9);
         padding: 6px;
         font-size: 14px;
         border-radius: 6px;
