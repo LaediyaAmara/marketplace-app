@@ -65,7 +65,7 @@
         </div>
 
         {{-- Tombol Konfirmasi --}}
-        <a href="{{ route('struk') }}" class="btn btn-dark w-100 fw-bold rounded-pill">SAYA SUDAH BAYAR</a>
+        <a href="{{ route('struk') }}" class="btn btn-dark w-100 fw-bold rounded-pill">BUY</a>
     </div>
 </div>
 @endsection
