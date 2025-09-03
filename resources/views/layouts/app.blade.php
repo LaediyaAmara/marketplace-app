@@ -253,7 +253,7 @@ body {
         border: 1px solid #ddd;
         border-radius: 10px;
         padding: 10px;
-        width: 160px;
+        width: 220px;
         flex: 0 0 auto;
         display: flex;
         flex-direction: column;
