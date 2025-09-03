@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panduan Jual Beli</title>
@@ -58,7 +59,10 @@
   </style>
 </head>
 <body>
-
+<div class="container my-4">
+    <a href="{{ url('produk') }}" class="text-decoration-none text-secondary mb-3 d-block">
+        ← Kembali
+    </a>
 <div class="container py-5">
   <div class="text-start">
     <div class="speech-bubble">Panduan Jual Beli</div>
@@ -107,6 +111,7 @@
     <div class="alert alert-info mt-4" role="alert">
       ✨ Tips: Selalu periksa deskripsi produk dengan teliti sebelum membeli, dan gunakan fitur chat untuk berkomunikasi dengan penjual.
     </div>
+    
   </div>
 </div>
 

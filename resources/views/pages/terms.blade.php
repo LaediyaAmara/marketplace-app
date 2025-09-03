@@ -54,7 +54,10 @@
   </style>
 </head>
 <body>
-
+<div class="container my-4">
+    <a href="{{ url('produk') }}" class="text-decoration-none text-secondary mb-3 d-block">
+        ← Kembali
+    </a>
 <div class="container py-5">
   <div class="text-start">
     <div class="speech-bubble">Syarat & Ketentuan</div>
