@@ -291,7 +291,7 @@ body {
 
 .product-price {
         font-weight: bold;
-        background-color:rgb(10, 9, 9);
+        background-color:rgb(6, 5, 5);
         padding: 6px;
         font-size: 14px;
         border-radius: 6px;
@@ -336,7 +336,8 @@ body {
     min-width: 150px;
 }
 .product-price {
-    background-color: #eee;
+    background-color:black;
+     color: white;
     font-weight: bold;
     font-size: 14px;
     padding: 2px;
