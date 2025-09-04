@@ -54,7 +54,7 @@ Route::get('/Home/detail/{slug}', function ($slug) {
         abort(404);
     }
 
-    return view('Home.detail', ['Home' => $produkList[$slug]]);
+    return view('produk.detail', ['produk' => $produkList[$slug]]);
 });
 
 Route::get('/keranjang', function () {
@@ -65,7 +65,7 @@ Route::get('/keranjang', function () {
             'harga' => 258000
         ],
     ];
-    return view('Home.keranjang', compact('dataKeranjang'));
+    return view('produk.keranjang', compact('dataKeranjang'));
 })->name('keranjang');
 
 
@@ -78,7 +78,7 @@ Route::get('/struk', function () {
 })->name('struk');
 
 Route::get('/instruksi', function () {
-    return view('Home.instruksi');
+    return view('produk.instruksi');
 })->name('instruksi');
 
 
