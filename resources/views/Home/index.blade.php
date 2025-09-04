@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarMain">
             <ul class="navbar-nav align-items-lg-center ms-auto gap-lg-3">
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->is('produk') ? 'active' : '' }}" href="{{ url('produk') }}">Home</a>
+                    <a class="nav-link {{ request()->is('Home') ? 'active' : '' }}" href="{{ url('Home') }}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
@@ -88,16 +88,16 @@
 <h5 class="fw-bold mb-2">Filters ></h5>
 <div class="d-flex overflow-auto gap-3 pb-2 mb-3" style="scroll-snap-type: x mandatory;">
     {{-- Filter thumbnails (contoh) --}}
-    <a href="{{ route('produk.index', ['kategori' => 'jaket']) }}" class="flex-shrink-0" style="width: 100px; scroll-snap-align: start;">
+    <a href="{{ route('Home.index', ['kategori' => 'jaket']) }}" class="flex-shrink-0" style="width: 100px; scroll-snap-align: start;">
         <img src="{{ asset('images/filter-jaket.jpg') }}" class="img-fluid rounded" alt="Filter Jaket">
     </a>
-    <a href="{{ route('produk.index', ['kategori' => 'celana']) }}" class="flex-shrink-0" style="width: 100px; scroll-snap-align: start;">
+    <a href="{{ route('Home.index', ['kategori' => 'celana']) }}" class="flex-shrink-0" style="width: 100px; scroll-snap-align: start;">
         <img src="{{ asset('images/filter-celana.jpg') }}" class="img-fluid rounded" alt="Filter Celana">
     </a>
-    <a href="{{ route('produk.index', ['kategori' => 'sepatu']) }}" class="flex-shrink-0" style="width: 100px; scroll-snap-align: start;">
+    <a href="{{ route('Home.index', ['kategori' => 'sepatu']) }}" class="flex-shrink-0" style="width: 100px; scroll-snap-align: start;">
         <img src="{{ asset('images/filter-sepatu.jpg') }}" class="img-fluid rounded" alt="Filter Sepatu">
     </a>
-    <a href="{{ route('produk.index', ['kategori' => 'atasan']) }}" class="flex-shrink-0" style="width: 100px; scroll-snap-align: start;">
+    <a href="{{ route('Home.index', ['kategori' => 'atasan']) }}" class="flex-shrink-0" style="width: 100px; scroll-snap-align: start;">
         <img src="{{ asset('images/filter-atasan.jpg') }}" class="img-fluid rounded" alt="Filter Atasan">
     </a>
     {{-- Tambah filter lain jika ada --}}
@@ -124,7 +124,7 @@
             <img src="{{ asset('storage/produk/' . $produk['gambar']) }}" alt="{{ $produk['nama'] }}" class="product-image">
         </div>
         <p class="mb-1 fw-semibold">{{ $produk['nama'] }}</p>
-        <a href="{{ url('/produk/detail/' . $slug) }}" class="text-decoration-none text-dark">
+        <a href="{{ url('/Home/detail/' . $slug) }}" class="text-decoration-none text-dark">
             <div class="product-price">Rp{{ number_format($produk['harga'], 0, ',', '.') }}</div>
         </a>
     </div>

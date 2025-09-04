@@ -11,18 +11,18 @@ Route::view('/terms', 'pages.terms')->name('terms');
 
 
 
-Route::get('/produk', function () {
-    return view('produk.index');
-})->name('produk.index');
+Route::get('/Home', function () {
+    return view('Home.index');
+})->name('Home.index');
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/produk', function () {
-    return view('produk.index');
-})->name('produk.index');
+Route::get('/Home', function () {
+    return view('Home.index');
+})->name('Home.index');
 
-Route::get('/produk/detail/{slug}', function ($slug) {
+Route::get('/Home/detail/{slug}', function ($slug) {
     $produkList = [
         'baggy-jeans' => [
             'nama' => 'Baggy Jeans',
@@ -54,7 +54,7 @@ Route::get('/produk/detail/{slug}', function ($slug) {
         abort(404);
     }
 
-    return view('produk.detail', ['produk' => $produkList[$slug]]);
+    return view('Home.detail', ['Home' => $produkList[$slug]]);
 });
 
 Route::get('/keranjang', function () {
@@ -65,20 +65,20 @@ Route::get('/keranjang', function () {
             'harga' => 258000
         ],
     ];
-    return view('produk.keranjang', compact('dataKeranjang'));
+    return view('Home.keranjang', compact('dataKeranjang'));
 })->name('keranjang');
 
 
 Route::get('/bayar', function () {
-    return view('produk.bayar');
+    return view('Home.bayar');
 })->name('bayar');
 
 Route::get('/struk', function () {
-    return view('produk.struk');
+    return view('Home.struk');
 })->name('struk');
 
 Route::get('/instruksi', function () {
-    return view('produk.instruksi');
+    return view('Home.instruksi');
 })->name('instruksi');
 
 
